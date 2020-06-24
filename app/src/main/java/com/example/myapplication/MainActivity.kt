@@ -12,7 +12,7 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
         val mTime = IntentFilter(Intent.ACTION_TIME_TICK)
-        registerReceiver(MyBroadcastReceivers(), mTime)
+        registerReceiver(receiver, mTime)
     }
 
     override fun onDestroy() {
